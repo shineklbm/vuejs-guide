@@ -32,3 +32,26 @@ This is an alternative to v-show, except it only loads the html elment when the 
     }
   });
 ```
+
+## Event Handling with VueJS
+If you want to handle events with Vuejs, you can actually write a simple event handler inside your script like the one bellow.
+
+### On Submit Event
+
+```
+  <div id="app">
+    <form method="post" v-on:submit="submitHandler">
+        <input type='email' name='email'>
+        <input type="submit" value="Suscribe">
+    </form>
+  </div>
+  
+  new Vue({
+    el: "#app",
+    methods: {
+    	submitHandler: function(){
+      	alert("You clicked the submit button!");
+      }
+    }
+  });
+```
