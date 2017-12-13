@@ -4,7 +4,17 @@
 ### v-show
 This can be used to show/hide element based on a condition true. Please have a look at the following code.
 ```
-  <div v-show="color === 'blue' ">This will display only when color value is blue </div>
+  <div id="app">
+    <p v-show="make == 'honda'">This offer available only for Honda Users</p>
+    <textarea v-model="make" id="" cols="30" rows="10"></textarea>
+  </div>
+  
+  new Vue({
+    el: "#app",
+    data: {
+      make: null
+    }
+  });
 ```
 ### v-if
 This is an alternative to v-show, except it only loads the html elment when the condition is met.
