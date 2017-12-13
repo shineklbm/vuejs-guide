@@ -36,7 +36,7 @@ This is an alternative to v-show, except it only loads the html elment when the 
 ## Event Handling with VueJS
 If you want to handle events with Vuejs, you can actually write a simple event handler inside your script like the one bellow.
 
-### On Submit Event
+### On Submit Event Handling
 
 ```
   <div id="app">
@@ -56,12 +56,12 @@ If you want to handle events with Vuejs, you can actually write a simple event h
   });
 ```
 
-### On Submit - Keep it Simple
+### On Submit Event Handling - Keep it Simple
 Here is another cool hack which will help you to write less code, using "@" symbol instead of "v-on:"
 
 ```
   <div id="app">
-    <form method="post" v-on:submit="submitHandler">
+    <form method="post" @submit="submitHandler">
         <input type='email' name='email'>
         <input type="submit" value="Suscribe">
     </form>
