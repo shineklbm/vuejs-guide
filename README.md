@@ -76,3 +76,26 @@ Here is another cool hack which will help you to write less code, using "@" symb
     }
   });
 ```
+
+### Prevent default submit button action
+The above demo will show an alert, then when you OK button of the click alert button, it will submit the form. If you want to this default action you may use "prevent". Here is the updated code
+
+```
+  <div id="app">
+    <form method="post" @submit.prevent="submitHandler">
+        <input type='email' name='email'>
+        <input type="submit" value="Suscribe">
+    </form>
+  </div>
+  
+  new Vue({
+    el: "#app",
+    methods: {
+    	submitHandler: function(){
+      	alert("You clicked the submit button!");
+      }
+    }
+  });
+```
+
+
