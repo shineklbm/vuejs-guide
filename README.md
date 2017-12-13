@@ -98,4 +98,24 @@ The above demo will show an alert, then when you OK button of the click alert bu
   });
 ```
 
+## OnClick Event Handling
+```
+<div id="app">
+    <input type="button" @click="increaseCount" value="Increase">
+    <span>{{ counter }}</span>
+</div>
 
+//////////////////////////////////////////////////////////////////////////////////
+
+new Vue({
+    el: "#app",
+    data: {
+    	counter: 0,
+    },
+    methods: {
+    	increaseCount: function(){
+      	this.counter+=1;
+      }
+    }
+});
+ ```
