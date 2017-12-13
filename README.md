@@ -78,7 +78,7 @@ Here is another cool hack which will help you to write less code, using "@" symb
 ```
 
 ### Prevent default submit button action
-The above demo will show an alert, then when you OK button of the click alert button, it will submit the form. If you want to this default action you may use "prevent". Here is the updated code
+The above demo will show an alert, then when you OK button of the click alert button, it will submit the form. If you want to stop this behavior you may use "prevent". Here is the updated code
 
 ```
   <div id="app">
