@@ -55,3 +55,24 @@ If you want to handle events with Vuejs, you can actually write a simple event h
     }
   });
 ```
+
+### On Submit - Keep it Simple
+Here is another cool hack which will help you to write less code, using "@" symbol instead of "v-on:"
+
+```
+  <div id="app">
+    <form method="post" v-on:submit="submitHandler">
+        <input type='email' name='email'>
+        <input type="submit" value="Suscribe">
+    </form>
+  </div>
+  
+  new Vue({
+    el: "#app",
+    methods: {
+    	submitHandler: function(){
+      	alert("You clicked the submit button!");
+      }
+    }
+  });
+```
